@@ -10,10 +10,12 @@
 		E83818AA2535BC9C000313BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818A92535BC9C000313BD /* AppDelegate.swift */; };
 		E83818AC2535BC9C000313BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818AB2535BC9C000313BD /* SceneDelegate.swift */; };
 		E83818AE2535BC9C000313BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818AD2535BC9C000313BD /* ViewController.swift */; };
-		E83818B12535BC9C000313BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83818AF2535BC9C000313BD /* Main.storyboard */; };
 		E83818B42535BC9C000313BD /* pagingViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E83818B22535BC9C000313BD /* pagingViewController.xcdatamodeld */; };
 		E83818B62535BCA0000313BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83818B52535BCA0000313BD /* Assets.xcassets */; };
 		E83818B92535BCA0000313BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83818B72535BCA0000313BD /* LaunchScreen.storyboard */; };
+		E83818C42535BCBC000313BD /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818C12535BCBC000313BD /* UILabel+.swift */; };
+		E83818C52535BCBC000313BD /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818C22535BCBC000313BD /* UIScrollView+.swift */; };
+		E83818C62535BCBC000313BD /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83818C32535BCBC000313BD /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		E83818A92535BC9C000313BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83818AB2535BC9C000313BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E83818AD2535BC9C000313BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E83818B02535BC9C000313BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E83818B32535BC9C000313BD /* pagingViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pagingViewController.xcdatamodel; sourceTree = "<group>"; };
 		E83818B52535BCA0000313BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83818B82535BCA0000313BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83818BA2535BCA0000313BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83818C12535BCBC000313BD /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		E83818C22535BCBC000313BD /* UIScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
+		E83818C32535BCBC000313BD /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,26 @@
 		E83818A82535BC9C000313BD /* pagingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E83818C02535BCBC000313BD /* Helpers */,
 				E83818A92535BC9C000313BD /* AppDelegate.swift */,
 				E83818AB2535BC9C000313BD /* SceneDelegate.swift */,
 				E83818AD2535BC9C000313BD /* ViewController.swift */,
-				E83818AF2535BC9C000313BD /* Main.storyboard */,
 				E83818B52535BCA0000313BD /* Assets.xcassets */,
 				E83818B72535BCA0000313BD /* LaunchScreen.storyboard */,
 				E83818BA2535BCA0000313BD /* Info.plist */,
 				E83818B22535BC9C000313BD /* pagingViewController.xcdatamodeld */,
 			);
 			path = pagingViewController;
+			sourceTree = "<group>";
+		};
+		E83818C02535BCBC000313BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E83818C12535BCBC000313BD /* UILabel+.swift */,
+				E83818C22535BCBC000313BD /* UIScrollView+.swift */,
+				E83818C32535BCBC000313BD /* UIView+.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +144,6 @@
 			files = (
 				E83818B92535BCA0000313BD /* LaunchScreen.storyboard in Resources */,
 				E83818B62535BCA0000313BD /* Assets.xcassets in Resources */,
-				E83818B12535BC9C000313BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +156,9 @@
 			files = (
 				E83818AE2535BC9C000313BD /* ViewController.swift in Sources */,
 				E83818AA2535BC9C000313BD /* AppDelegate.swift in Sources */,
+				E83818C62535BCBC000313BD /* UIView+.swift in Sources */,
+				E83818C42535BCBC000313BD /* UILabel+.swift in Sources */,
+				E83818C52535BCBC000313BD /* UIScrollView+.swift in Sources */,
 				E83818B42535BC9C000313BD /* pagingViewController.xcdatamodeld in Sources */,
 				E83818AC2535BC9C000313BD /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E83818AF2535BC9C000313BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E83818B02535BC9C000313BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E83818B72535BCA0000313BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
